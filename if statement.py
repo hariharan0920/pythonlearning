@@ -52,6 +52,8 @@ if(30<mark<70):
 if(mark>70):
     print("good")
 
+# elif
+
 # another  effcient method using elif
 
 mark=int(input("enter mark"))
@@ -98,6 +100,54 @@ if(mark>70):
     print("eligible")
 else:
     print("not eligible")
+
+# nestedif
+
+    # get input for salary and age, if sal>or=20000  or age<25 get input for loan amount or print not eligible
+    # if req amount <or=50000 print eligible  ,if not print max amount is 50000
+
+sal=int(input("enter sal"))
+age=int(input("enter age"))
+if(sal>=20000 or age<=25):
+    loanamount=int(input("enter loan amount"))
+    if(loanamount<=50000):
+        print("print elgible")
+    else:
+        print("max amount is 50000")
+else:
+    print("not eligible")
+
+    # get input for 5 sub marks ,find avg ,if avg >30 print good, else print bad
+
+a=int(input("enter mark of eng"))
+b=int(input("enter mark of tamil"))
+c=int(input("enter mark of maths"))
+d=int(input("enter mark of science"))
+e=int(input("enter mark of social"))
+avg=a+b+c+d+e/5
+if(avg>=30):
+    print("good")
+else:
+    print("bad")
+
+# given a int n, if n is odd printweird ,if n is even and inclusive range of 2to5 print not weird
+#if n is even and inclusive range 6to 20 print weird, if n is even >20 print not weird
+
+n=int(input())
+if(n%2==0):
+    if(n>=2 and n<=5):
+        print("evennot weird")
+    elif( n>=6 and n<=20):
+        print("evenweird")
+    elif(n%2==0 and n>20):
+        print("evennnnot weird")
+else:
+    print("oddweird")
+
+
+
+
+
 
     
 
