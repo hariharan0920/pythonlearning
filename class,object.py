@@ -1,4 +1,6 @@
 # class object methods function constructor selfkeyword pass keyword
+# decorator, classmethod,staticmethod  accessing class variable
+
 
 # class  a function inside a class is called as methods
 #Declaring Variables Outside a Constructor (Class Variables)
@@ -171,5 +173,68 @@ cal.sub()
 cal.mul()
 cal.div() 
 
-#  
+#  class variable    instance varaiable
+# class variable is a variable that is common for all the objects in the class
+# instance variable is a variable that is unique for each object
 
+
+class phone:
+    chargertype="c-type" # class variable
+    def __init__(self,brand,price):
+        self.brand=brand # instance variable
+        self.price=price
+        
+    def display(self):
+        print("brand:",self.brand)
+        print("price:",self.price)
+        print("chargertype:",self.chargertype)
+
+phone.chargertype="b-type" # changing the class variable's value
+samsung=phone("samsung","10")
+samsung.display()
+
+redmi=phone("redmi","20")
+redmi.display()
+
+# decorator, classmethod,staticmethod  accessing class variable
+#  using a function changing class variable
+# but calling class method we have to pass theclassname as argument
+# self used to accessing a objects variable and changing it
+# cls used to accessing a class variable and changing it
+# method 2 using "decoractor" we can able access the class variable without passing the class name
+
+
+class laptop:
+    chargertype="c-type"
+    design="modern"
+    
+    def __init__(self):
+        self.brand=""
+        self.price=34
+    def setprice(self,price):# self used to accessing a objects variable and changing it
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+    def setchargertype(cls):# cls used to accessing a class variable and changing it
+        cls.chargertype="b-type"
+        print(cls.chargertype)
+
+
+    @classmethod# method 2 using "decoractor" we can able access the class variable without passing the class name
+    def design(cls):
+        cls.design="classic"
+        print(cls.design)
+
+    @staticmethod #staticmethod if you not using the class variable and instance variable for a function
+    def info():
+        print("this is laptop")
+
+
+hp=laptop()
+hp.setprice(20)#calling a function and passing object value argument
+hp.getprice()
+laptop.setchargertype(laptop)# but calling class method we have to pass theclassname as argument
+laptop.design()
+hp.info()# calling function using static method
