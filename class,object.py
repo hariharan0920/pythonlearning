@@ -196,6 +196,7 @@ samsung.display()
 redmi=phone("redmi","20")
 redmi.display()
 
+# type of class methods
 # decorator, classmethod,staticmethod  accessing class variable
 #  using a function changing class variable
 # but calling class method we have to pass theclassname as argument
