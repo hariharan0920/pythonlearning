@@ -1,0 +1,44 @@
+#polymorphism  means having many forms.polymorphism means the same function name (but different signatures) being used for different types.
+# using of same function name but difference is the datatypes and number of arguments used in fuction
+def add(a,b,c=0):
+    print(a+b+c)
+
+add(1,2)
+add(1,2,3)
+
+
+# method overrides
+# Create class Animal with method sound,prints "Animal makes a sound."Create derived class Dog,inheritsfrom Animal and overrides the sound()method to print "Dog barks." Create anotherderived class called Bird that inherits fromAnimal and overrides the sound () method toprint "Birds Sing."
+class animal():
+    def sound(self):
+        print("animal makes a sound")
+class dog(animal):
+    def sound(self):
+        print("dog barks")
+class bird(animal):
+    def sound(self):
+        print("birds sings")
+
+a1=animal()
+a1.sound()
+
+ # Create a base class called Shape with a methodarea() that returns 0. Create a derived classcalled Rectangle that inherits from Shapeand overrides the area() method to calculateand return the area of a rectangle.
+# polymorphism is 2 or more class using same function and each class overrides the function .classes are inherited
+class shape():
+    def area(self):
+        return 0 
+class rectangle(shape):# inheritance
+    def area(self):#polymorphism
+        l=10
+        b=20
+        return(l*b)
+        
+s1=shape()
+print(s1.area())
+r1=rectangle()
+print(r1.area())
+
+#
+
+
+
