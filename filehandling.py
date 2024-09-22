@@ -28,6 +28,7 @@ f.write("vanakam")
 print(f)
 f.close()
 
+
 # reading a file and printing lineby line
 f=open(r"H:\git\pythonlearning\text.py","r")
 print(f.readline())# it use to print the  line by line only
