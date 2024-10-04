@@ -71,6 +71,7 @@ print(is_leap(year))
 #    17    21    11 10001
 
 
+
 #binary width and string formatting method
 
 def print_formatted(number):
