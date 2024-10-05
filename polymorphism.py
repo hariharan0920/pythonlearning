@@ -53,6 +53,7 @@ class student(person):
         print(self.name)
         print(self.grade)
 
+
 s1=student("hari","a")# we passing parameter values of both base class and childclass , are passed to childclass
 s1.display()
 
