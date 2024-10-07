@@ -6,6 +6,7 @@ def add(a,b,c=0):
 add(1,2)
 add(1,2,3)
 
+
 # method overrides
 # Create class Animal with method sound,prints "Animal makes a sound."Create derived class Dog,inheritsfrom Animal and overrides the sound()method to print "Dog barks." Create anotherderived class called Bird that inherits fromAnimal and overrides the sound () method toprint "Birds Sing."
 class animal():
