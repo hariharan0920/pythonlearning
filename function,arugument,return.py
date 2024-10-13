@@ -9,7 +9,6 @@ painter()
 # q1 create a function called add(),sub,mul,div ,get input for a and b inside every function  print result
 
 
-
 def add(): 
     print("addition")
     a=int(input("enter a num"))
@@ -17,6 +16,7 @@ def add():
     print(a+b)
 
 add()  # calling a function
+
 
 #  passing arugument in the function
 # q2 get input and pass it to function called findevenorodd().print the num is even or odd
