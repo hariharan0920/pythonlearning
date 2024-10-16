@@ -8,7 +8,6 @@ painter()
 # creating function
 # q1 create a function called add(),sub,mul,div ,get input for a and b inside every function  print result
 
-
 def add(): 
     print("addition")
     a=int(input("enter a num"))
