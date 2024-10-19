@@ -16,7 +16,6 @@ def add():
 
 add()  # calling a function
 
-
 #  passing arugument in the function
 # q2 get input and pass it to function called findevenorodd().print the num is even or odd
 
