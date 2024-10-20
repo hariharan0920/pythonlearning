@@ -24,7 +24,6 @@ def evenorodd(num):
         print("even")
     else:
         print("odd")
-
 a=int(input("enter a num"))
 evenorodd(a) # passing a arugument
 
