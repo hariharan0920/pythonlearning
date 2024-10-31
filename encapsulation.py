@@ -19,6 +19,7 @@ class company():
 c1=company()
 c1.com()
 
+
 #protected variable
 # protected variable-a class variable will become protected by adding(self.company=_self.company)
 # by protecting this variable no one can acess it,only the functions in that same class and childclass  can access it
