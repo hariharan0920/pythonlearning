@@ -5,7 +5,6 @@
 # protected variable-a class variable will become protected by adding(self.company=_self.company)
 # by protecting this variable no one can acess it,only the functions in that same class and childclass  can access it
 
-
 #private varible
 # private varible-a class variable will become private by adding(self.company=__self.company)
 # by privating this variable no one can acess it,only the functions in that same class can access it
