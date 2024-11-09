@@ -19,6 +19,10 @@ add()  # calling a function
 #  passing arugument in the function
 # q2 get input and pass it to function called findevenorodd().print the num is even or odd
 
+
+
+
+
 def evenorodd(num):
     if(num%2==0):
         print("even")
@@ -26,7 +30,6 @@ def evenorodd(num):
         print("odd")
 a=int(input("enter a num"))
 evenorodd(a) # passing a arugument
-
 # q3 get a input and passs it to the function passorfail().print the num is pass or fail
 
 def passorfail(num):
