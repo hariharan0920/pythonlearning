@@ -13,6 +13,7 @@ class goa:
     def beach(self):
         print("beach")
 
+
 ramesh=goa()  #creating object for class
 suresh=goa()
 
