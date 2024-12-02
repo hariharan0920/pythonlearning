@@ -1,7 +1,6 @@
 # class object methods function constructor selfkeyword pass keyword
 # decorator, classmethod,staticmethod  accessing class variable
 
-
 # class  a function inside a class is called as methods
 #Declaring Variables Outside a Constructor (Class Variables)
 # Declaring Variables Inside a Constructor (Instance Variables)
@@ -12,6 +11,7 @@ class goa:
         print("party")
     def beach(self):
         print("beach")
+
 
 ramesh=goa()  #creating object for class
 suresh=goa()
