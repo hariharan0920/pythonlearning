@@ -89,7 +89,7 @@ analogWrite(motor11,0);
 analogWrite(motor12,150);
 analogWrite(motor21,150);
 analogWrite(motor22,0);
-delay(1400);
+delay(1400);ghf
 }
 }
        fdg
